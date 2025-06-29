@@ -25,7 +25,6 @@ Jinja2==3.1.4
 joblib==1.5.1
 jsonschema==4.24.0
 jsonschema-specifications==2025.4.1
-keras==3.10.0
 kiwisolver==1.4.8
 libclang==18.1.1
 Markdown==3.8.2
@@ -63,8 +62,6 @@ streamlit==1.46.0
 tenacity==9.1.2
 tensorboard==2.19.0
 tensorboard-data-server==0.7.2
-tensorflow==2.19.0
-tensorflow-io-gcs-filesystem==0.31.0
 termcolor==3.1.0
 toml==0.10.2
 tornado==6.5.1
