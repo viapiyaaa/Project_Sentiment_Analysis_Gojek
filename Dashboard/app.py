@@ -11,12 +11,28 @@ import pandas as pd
 # Import fungsi preprocessing kamu
 from preprocessing import cleaningText, casefoldingText, fix_slangwords, filteringText, toSentence
 
-# Load tokenizer dan model
-with open("../Models/tokenizer.pkl", "rb") as f:
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Menggabungkan path untuk tokenizer.pkl
+# Naik satu level dari current_dir (dari Dashboard/ ke your_github_repo/)
+# Lalu masuk ke folder 'Models'
+tokenizer_path = os.path.join(current_dir, '..', 'Models', 'tokenizer.pkl')
+
+# Menggabungkan path untuk model LSTM
+model_lstm_path = os.path.join(current_dir, '..', 'Models', 'lstm_sentiment_model.h5')
+
+
+# Load tokenizer
+with open(tokenizer_path, "rb") as f:
     tokenizer = pickle.load(f)
 
-# Pastikan load_model ini untuk model Keras/TensorFlow Anda
-model_lstm = load_model("../Models/lstm_sentiment_model.h5")
+# Load model LSTM
+# (Disarankan pakai @st.cache_resource jika di Streamlit untuk performance)
+@st.cache_resource
+def load_my_lstm_model(path):
+    return load_model(path)
+
+model_lstm = load_my_lstm_model(model_lstm_path)
 
 # Dictionary label
 label_dict = {0: "Negatif", 1: "Netral", 2: "Positif"}
