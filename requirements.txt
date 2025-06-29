@@ -4,6 +4,7 @@ numpy
 matplotlib==3.8.2
 seaborn
 wordcloud
-tensorflow
+tensorflow==2.18.0
+scikit-learn
 nltk
 Sastrawi
