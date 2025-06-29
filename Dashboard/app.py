@@ -7,6 +7,7 @@ from wordcloud import WordCloud
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 import pandas as pd
+import os  
 
 # Import fungsi preprocessing kamu
 from preprocessing import cleaningText, casefoldingText, fix_slangwords, filteringText, toSentence
