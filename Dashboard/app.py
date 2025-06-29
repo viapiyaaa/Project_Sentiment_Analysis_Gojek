@@ -12,10 +12,11 @@ import pandas as pd
 from preprocessing import cleaningText, casefoldingText, fix_slangwords, filteringText, toSentence
 
 # Load tokenizer dan model
-with open("..\Models\tokenizer.pkl", "rb") as f:
+with open("../Models/tokenizer.pkl", "rb") as f:
     tokenizer = pickle.load(f)
 
-model_lstm = load_model("..\Models\lstm_sentiment_model.h5")
+# Pastikan load_model ini untuk model Keras/TensorFlow Anda
+model_lstm = load_model("../Models/lstm_sentiment_model.h5")
 
 # Dictionary label
 label_dict = {0: "Negatif", 1: "Netral", 2: "Positif"}
