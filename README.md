@@ -32,8 +32,6 @@ This project analyzes user reviews of the **Gojek** mobile application from Goog
 ![Seaborn](https://img.shields.io/badge/-Seaborn-5A9FD4?style=flat&logo=seaborn&logoColor=white)&nbsp;
 ![Streamlit](https://img.shields.io/badge/-Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)&nbsp;
 
----
-
 ## 🚀 How to Run Locally
 
 ```bash
@@ -50,23 +48,17 @@ pip install -r requirements.txt
 
 # 4. Run Streamlit app
 streamlit run app.py
-
+```
 
 ## 📊 Sample Result (Optional)  
-**Accuracy**  
-- Algoritma Logistic Regression dengan Bag of Words (BoW)
-![image](https://github.com/user-attachments/assets/41ce784a-3399-478a-bf9d-af47cb501e35)
-- Algoritma Logistic Regression dengan TF-IDF
-![image](https://github.com/user-attachments/assets/b174b102-d7d0-440a-947d-15e01f7332ef)
-- Deep Learning LSTM dengan Word Embedding
-![image](https://github.com/user-attachments/assets/2bdb077d-3496-421d-b4df-f4f57dab9419)
-![image](https://github.com/user-attachments/assets/d708370c-cf36-4d6a-b40d-a7df988f349d)
 
 **Confusion matrix**
 - Algoritma Logistic Regression dengan Bag of Words (BoW)
 ![image](https://github.com/user-attachments/assets/b8457391-b2cc-4548-aed9-0ab0afa755a2)
+
 - Algoritma Logistic Regression dengan TF-IDF
 ![image](https://github.com/user-attachments/assets/41d67774-f2e2-428e-ac7a-19048657daec)
+
 - Deep Learning LSTM dengan Word Embedding
 ![image](https://github.com/user-attachments/assets/f0d581b1-1c74-4cb5-b42e-ce87a389fb55)
 
@@ -79,3 +71,6 @@ Scraped using: google-play-scraper
 
 ## 👩‍💻 Author
 Evi Afiyatus Solihah
+
+
+
